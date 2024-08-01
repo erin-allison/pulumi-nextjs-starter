@@ -28,11 +28,10 @@
     "react-dom": "^18"
   },
   "exports": {
-    "./*": [
-      "./src/*/index.ts",
-      "./src/*/index.tsx",
-      "./src/*.ts",
-      "./src/*.tsx"
-    ]
+    "./Button": "./src/Button.tsx",
+    "./Card": "./src/Card.tsx",
+    "./Code": "./src/Code.tsx",
+    "./Copyright": "./src/Copyright.tsx",
+    "./ProTip": "./src/ProTip.tsx"
   }
 }

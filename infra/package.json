@@ -8,8 +8,8 @@
   "packageManager": "pnpm@9.4.0",
   "scripts": {
     "lint": "eslint --fix .",
-    "deploy": "cross-var dotenv -c $APP_ENV -- pulumi up -s $PULUMI_STACK",
-    "preview": "cross-var dotenv -c $APP_ENV -- pulumi preview -s $PULUMI_STACK"
+    "deploy": "cross-var dotenv -c $APP_ENV -- pulumi up",
+    "preview": "cross-var dotenv -c $APP_ENV -- pulumi preview"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

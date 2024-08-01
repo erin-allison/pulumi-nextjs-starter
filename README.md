@@ -14,6 +14,7 @@ Example environment files are included to showcase setting up the Pulumi
 backend and specifying proper use of AWS profiles.
 
 ## Outstanding TODOs
+- Design guards to isolate environments to some degree (dev vs prod)
 - Add the ability to define a CNAME for the CloudFront distribution.
 - Allow passing environment variables and attaching extra IAM policies to the server functions
 - Fill out demo sites more to validate usage of the above
