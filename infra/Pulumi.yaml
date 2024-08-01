@@ -1,0 +1,5 @@
+name: nextjs-starter
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm

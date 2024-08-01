@@ -1,0 +1,9 @@
+{
+  "name": "@repo/typescript-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "Erin Allison",
+  "sideEffects": false,
+  "packageManager": "pnpm@9.4.0"
+}

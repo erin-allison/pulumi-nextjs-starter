@@ -1,0 +1,28 @@
+{
+  "name": "nextjs-sst-ion-monorepo-starter",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "Erin Allison",
+  "sideEffects": false,
+  "packageManager": "pnpm@9.4.0",
+  "scripts": {
+    "build": "turbo run build",
+    "build:open-next": "turbo run build:open-next",
+    "preview": "turbo run preview",
+    "deploy": "turbo run deploy",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.0.9",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.4.2"
+  }
+}

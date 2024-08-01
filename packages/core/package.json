@@ -1,0 +1,19 @@
+{
+  "name": "@repo/core",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "Erin Allison",
+  "sideEffects": false,
+  "packageManager": "pnpm@9.4.0",
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
+  },
+  "exports": {
+    "./*": [
+      "./src/*/index.ts",
+      "./src/*.ts"
+    ]
+  }
+}

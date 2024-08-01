@@ -1,0 +1,41 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "globalEnv": ["APP_ENV"],
+  "tasks": {
+    "build:open-next": {
+      "dependsOn": ["build", "^lint"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [
+        "$TURBO_DEFAULT$",
+        ".open-next/**",
+        "!.open-next/cache/**"
+      ]
+    },
+    "build": {
+      "dependsOn": ["^build", "^lint"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [
+        "$TURBO_DEFAULT$",
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    },
+    "preview": {
+      "env": ["AWS_PROFILE", "AWS_REGION"],
+      "dependsOn": ["^build:open-next", "lint"]
+    },
+    "deploy": {
+      "env": ["AWS_PROFILE", "AWS_REGION"],
+      "dependsOn": ["^build:open-next", "lint"],
+      "cache": false,
+      "interactive": true
+    },
+    "lint": {
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

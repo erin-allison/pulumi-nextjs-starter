@@ -1,0 +1,7 @@
+{
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+
+  "importOrder": ["@pulumi", "^constructs$", "aws-cdk", "aws-sdk", "@repo.*", "^[./]", ".*"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
