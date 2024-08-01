@@ -21,5 +21,7 @@ backend and specifying proper use of AWS profiles.
 - Fill out demo sites more to validate usage of the above
 - Add policies to the server function URLs to restrict access to only the
   CloudFront distribution.
+- Add NextAuth example
+- Add commitlint
 - Add the warmer function (not high priority since I won't be using that any time soon)
 - Add edge function support (same as above)
